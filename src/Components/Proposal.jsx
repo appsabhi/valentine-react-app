@@ -28,6 +28,13 @@ const [noPos, setNoPos] = useState({
 
   return (
     <div className="container">
+        <div className="hearts">
+  <span>❤️</span>
+  <span>💖</span>
+  <span>💘</span>
+  <span>💕</span>
+</div>
+
       {!yes ? (
         <>
           <h1>Will you be my Valentine? ❤️</h1>
@@ -52,8 +59,13 @@ const [noPos, setNoPos] = useState({
 </div>
         </>
       ) : (
-        <h1>I knew it 😍❤️</h1>
+        <div className="celebrate">
+    <h1>Yayyyy 😍❤️</h1>
+    <p>You just made my Valentine’s Day special 💕</p>
+  </div>
       )}
+
+
     </div>
   );
 }
